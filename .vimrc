@@ -9,14 +9,15 @@ call plug#end()
 let g:airline_theme='codedark'
 colorscheme codedark
 
-"general setting"
+""general setting"
 set background=dark
-set termguicolors   
+set termguicolors
 syntax on
-set tabstop=4     " Size of a hard tabstop (ts).
+set textwidth=79
+set tabstop=8     " Size of a hard tabstop (ts).
 set shiftwidth=4  " Size of an indentation (sw).
 set expandtab     " Always uses spaces instead of tab characters (et).
-set softtabstop=0 " Number of spaces a <Tab> counts for. When 0, featuer is off (sts).
+set softtabstop=4 " Number of spaces a <Tab> counts for. When 0, featuer is off (sts).
 set autoindent    " Copy indent from current line when starting a new line.
 set smartindent   " Smart indent"
 set smarttab      " Inserts blanks on a <Tab> key (as per sw, ts and sts).
@@ -27,9 +28,9 @@ set ttyfast
 set path+=**
 set wildmenu
 
-"Mapping"
+""Mapping"
 noremap <C-c> <Esc>
 
 "C++ Mapping"
 nnoremap <C-z> :!g++ -o  %:r.out % -std=c++11<Enter>
-nnoremap <C-x> :!./%:r.out
+nnoremap <C-x> :!./%:r.outGG
