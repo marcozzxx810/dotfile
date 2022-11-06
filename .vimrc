@@ -2,6 +2,7 @@
 call plug#begin('~/.vim/plugged')
 Plug 'tomasiser/vim-code-dark'
 Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 "Theme"
@@ -9,6 +10,8 @@ let g:airline_theme='codedark'
 colorscheme codedark
 
 "general setting"
+set background=dark
+set termguicolors   
 syntax on
 set tabstop=4     " Size of a hard tabstop (ts).
 set shiftwidth=4  " Size of an indentation (sw).
@@ -18,6 +21,7 @@ set autoindent    " Copy indent from current line when starting a new line.
 set smartindent   " Smart indent"
 set smarttab      " Inserts blanks on a <Tab> key (as per sw, ts and sts).
 set number
+set ttyfast
 
 "Find files"
 set path+=**
